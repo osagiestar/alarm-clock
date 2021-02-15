@@ -20,11 +20,16 @@ function setAlarm() {
       bodyClass.style.backgroundColor = "#B5AEA8";
     }
 
-    alarmCounter.textContent = `Time Remaining: ${minutes} : ${seconds}`;
+    alarmCounter.textContent = `Time Remaining: ${zeroPadded(minutes)} : ${zeroPadded(seconds)}`;
     seconds--;
   }, 1000);
 
   pauseAlarm();
+
+  // function adds "0" to the time units to give it a double digit //
+  function zeroPadded(time) {
+    return time.toString().padStart(2, 0);
+  }
 }
 
 // DO NOT EDIT BELOW HERE
