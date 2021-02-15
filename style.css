@@ -17,3 +17,13 @@ body {
 h1 {
   text-align: center;
 }
+
+#stop {
+    background: rgb(185, 155, 185);
+    color: brown;
+}
+
+#set {
+  background: rgb(65, 179, 80);
+  color: white;
+}
