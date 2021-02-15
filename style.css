@@ -8,6 +8,12 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  background-color: rgb(247, 242, 244);
+  width: 500px;
+  height: 300px;
+  padding: 10px;
+  border: 0.2px solid rgb(238, 53, 53);
+  text-align: center;
 }
 
 #alarmSet {
@@ -26,4 +32,11 @@ h1 {
 #set {
   background: rgb(65, 179, 80);
   color: white;
+}
+
+#clock {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-style: oblique;
+  text-decoration: underline;
 }
