@@ -15,7 +15,8 @@ function setAlarm() {
 
     if (seconds === 0) {
       clearInterval(interval);
-      audio.play();
+      // audio.play();
+      playAlarm();
       bodyClass.style.backgroundColor = "#B5AEA8";
     }
 
@@ -23,7 +24,7 @@ function setAlarm() {
     seconds--;
   }, 1000);
 
-  audio.pause();
+  pauseAlarm();
 }
 
 // DO NOT EDIT BELOW HERE
